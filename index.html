@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Antex | Portfolio</title>
+  <link rel="stylesheet" href="style2.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-laptop-code"></i>
+      <span>Antex</span>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero reveal">
+    <div class="hero-text">
+      <h1 class="glow">Anteneh Tesfaye</h1>
+      <div class="typing-container">
+        <span class="prefix">I am a </span>
+        <span id="typing-text"></span>
+      </div>
+      <p>Computer Science graduate skilled in Web Development, Networking, Programming, Graphics, Video Editing, and Digital Solutions.</p>
+      <button class="btn" onclick="scrollToProjects()">
+        Let's get started <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Anteneh Tesfaye Profile">
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects reveal" id="projects">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="project-grid">
+      <div class="card">
+        <div class="card-image">
+          <img src="project1.jpg" alt="Portfolio Website">
+        </div>
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive portfolio using HTML, CSS, JS with smooth animations.</p>
+        <a href="#" class="card-btn">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="project2.jpg" alt="Computer Service System">
+        </div>
+        <h3>Computer Service System</h3>
+        <p>System for managing repair and service workflow with database integration.</p>
+        <a href="#" class="card-btn">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="project3.jpg" alt="Network Setup">
+        </div>
+        <h3>Network Setup</h3>
+        <p>Configured LAN/WAN for small business environment with security protocols.</p>
+        <a href="#" class="card-btn">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 Antex. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>

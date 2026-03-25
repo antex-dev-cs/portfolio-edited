@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>About Me | Antex</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <i class="fas fa-laptop-code"></i>
+    <span>Antex</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="about">
+  <div class="about-text">
+    <h1>About Me</h1>
+    <div class="underline"></div>
+    <p>
+      I am a Computer Science graduate with a passion for technology and innovation. 
+      My expertise spans networking, computer repair, web development, and digital solutions.
+    </p>
+    <p>
+      I believe in creating meaningful digital experiences that solve real-world problems. 
+      With a strong foundation in both hardware and software, I bring a holistic approach 
+      to every project I undertake.
+    </p>
+    <div class="skills">
+      <h3>My Skills</h3>
+      <div class="skill-tags">
+        <span>HTML/CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Networking</span>
+        <span>React</span>
+        <span>Node.js</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="cv_antex.pdf" download class="btn primary">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+      <button class="btn secondary" id="viewCertBtn">
+        <i class="fas fa-certificate"></i> View Certificates
+      </button>
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="profile.jpg" alt="Anteneh Tesfaye">
+  </div>
+</section>
+
+<section class="certificates hidden" id="certificates">
+  <div class="section-header">
+    <h2>My Certificates</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="cert1.jpg" alt="CS Degree Certificate">
+      <p>Computer Science Degree</p>
+      <span>Addis Ababa University</span>
+    </div>
+    <div class="cert-card">
+      <img src="cert2.jpg" alt="Exit Exam Certificate">
+      <p>Exit Exam Certificate</p>
+      <span>Excellence Achievement</span>
+    </div>
+  </div>
+</section>
+
+<section class="projects reveal">
+  <div class="section-header">
+    <h2>My Projects</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="project-grid">
+    <div class="card">
+      <div class="card-image">
+        <img src="project1.jpg" alt="Portfolio Website">
+      </div>
+      <h3>Portfolio Website</h3>
+      <p>Modern responsive portfolio using HTML, CSS, JS with smooth animations.</p>
+      <button class="card-btn">View Project <i class="fas fa-external-link-alt"></i></button>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="project2.jpg" alt="Computer Service System">
+      </div>
+      <h3>Computer Service System</h3>
+      <p>System for managing repair and service workflow with database integration.</p>
+      <button class="card-btn">View Project <i class="fas fa-external-link-alt"></i></button>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="project3.jpg" alt="Network Setup">
+      </div>
+      <h3>Network Setup</h3>
+      <p>Configured LAN/WAN for small business environment with security protocols.</p>
+      <button class="card-btn">View Project <i class="fas fa-external-link-alt"></i></button>
+    </div>
+  </div>
+</section>
+
+<div class="floating-btn" id="floatingBtn">
+  <i class="fas fa-comment-dots"></i>
+</div>
+
+<div class="quick-menu" id="quickMenu">
+  <a href="index.html"><i class="fas fa-home"></i> Back to Home</a>
+  <a href="#top"><i class="fas fa-arrow-up"></i> Scroll to Top</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Antex. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="about.js"></script>
+</body>
+</html>
