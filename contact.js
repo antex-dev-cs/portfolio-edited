@@ -1,24 +1,5 @@
-// Contact form handling
-const contactForm = document.getElementById("contactForm");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-    
-    // Simple validation
-    if (name && email && message) {
-      // Show success message (you can integrate with actual email service here)
-      alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon.`);
-      contactForm.reset();
-    } else {
-      alert("Please fill in all fields.");
-    }
-  });
-}
+// Remove the old form handler since we're now using FormSubmit
+// The form will work automatically with FormSubmit
 
 // Floating menu
 const floatingBtn = document.getElementById("floatingBtn");
