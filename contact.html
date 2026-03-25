@@ -79,15 +79,24 @@
 
   <div class="contact-form-section">
     <h2>Send a Message</h2>
-    <form id="contactForm" class="contact-form">
+    
+    <!-- WORKING FORM WITH FORMSUBMIT -->
+    <form action="https://formsubmit.co/antexxyz@gmail.com" method="POST" class="contact-form">
+      <!-- These hidden inputs configure FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="New Message from Antex Portfolio!">
+
+      <!-- <input type="hidden" name="_next" value="https://antex-web.netlify.app/thankyou.html"> this line is when i want a tnx page after submit-->
+      
       <div class="form-group">
-        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" name="name" placeholder="Your Name" required>
       </div>
       <div class="form-group">
-        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="email" name="email" placeholder="Your Email" required>
       </div>
       <div class="form-group">
-        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       </div>
       <button type="submit" class="submit-btn">
         <i class="fas fa-paper-plane"></i> Send Message
